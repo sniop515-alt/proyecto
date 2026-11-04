@@ -1,4 +1,3 @@
-
 /* ESTILOS GENERALES */
 * {
     box-sizing: border-box;
@@ -104,6 +103,11 @@ textarea {
 
 textarea {
     resize: vertical;
+}
+
+input[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+    border: 3px solid #a00000;
 }
 
 /* BOTONES */
