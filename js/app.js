@@ -1,4 +1,5 @@
 
+
 document.addEventListener("DOMContentLoaded", function () {
 
     // Preguntas frecuentes
@@ -10,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const id = boton.dataset.respuesta;
             const respuesta = document.getElementById(id);
+
+            if (!respuesta) return;
 
             const estaAbierta =
                 boton.getAttribute("aria-expanded") === "true";
@@ -36,17 +39,26 @@ document.addEventListener("DOMContentLoaded", function () {
             evento.preventDefault();
 
             const nombre = document.getElementById("nombre").value.trim();
-            const correo = document.getElementById("correo").value.trim();
+            const correoInput = document.getElementById("correo");
+            const correo = correoInput.value.trim();
             const resultado = document.getElementById("resultado");
 
-            if (nombre === "" || correo === "") {
+            if (
+                nombre === "" ||
+                correo === "" ||
+                !correoInput.validity.valid
+            ) {
 
-                resultado.textContent = "Revisa los campos obligatorios.";
+                resultado.textContent =
+                    "Revisa el nombre y escribe un correo válido.";
+
                 resultado.className = "error";
 
             } else {
 
-                resultado.textContent = "Mensaje enviado correctamente.";
+                resultado.textContent =
+                    "Datos validados correctamente. Formulario de demostración.";
+
                 resultado.className = "exito";
 
             }
