@@ -3,8 +3,9 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     // Preguntas frecuentes
-    const preguntas = document.querySelectorAll(".pregunta");
-
+    document.querySelectorAll(".respuesta").forEach(function (respuesta) {
+    respuesta.hidden = true;
+    });
     preguntas.forEach(function (boton) {
 
         boton.addEventListener("click", function () {
