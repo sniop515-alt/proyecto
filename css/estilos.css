@@ -1,5 +1,9 @@
 
-/* ESTILOS GENERALES */
+
+/* ==============================
+   ESTILOS GENERALES
+============================== */
+
 * {
     box-sizing: border-box;
 }
@@ -15,7 +19,10 @@ body {
     line-height: 1.6;
 }
 
-/* ENCABEZADO */
+/* ==============================
+   ENCABEZADO
+============================== */
+
 .encabezado {
     background: #6b4226;
     padding: 15px;
@@ -26,7 +33,10 @@ body {
     font-size: 1.75rem;
 }
 
-/* MENÚ */
+/* ==============================
+   MENÚ
+============================== */
+
 .menu a {
     color: #ffffff;
     margin-right: 12px;
@@ -36,7 +46,14 @@ body {
     padding: 5px;
 }
 
-/* CONTENIDO */
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* ==============================
+   CONTENIDO
+============================== */
+
 .contenido {
     padding: 20px;
 }
@@ -46,21 +63,27 @@ body {
     height: auto;
 }
 
-/* ENLACES */
+/* ==============================
+   ENLACES
+============================== */
+
 a {
-    color: #633a20;
+    color: #6b4226;
     text-decoration: underline;
 }
 
 a:hover {
-    color: #3b291e;
+    color: #a05a32;
 }
 
-/* PREGUNTAS FRECUENTES */
+/* ==============================
+   PREGUNTAS FRECUENTES
+============================== */
+
 .pregunta {
     display: block;
     width: 100%;
-    background: #6b4226;
+    background: #cc9773;
     color: #ffffff;
     padding: 12px;
     margin-top: 8px;
@@ -68,6 +91,10 @@ a:hover {
     cursor: pointer;
     text-align: left;
     font-size: 1rem;
+}
+
+.pregunta:hover {
+    background: #a86e4b;
 }
 
 .respuesta {
@@ -80,7 +107,10 @@ a:hover {
     display: none;
 }
 
-/* FORMULARIOS */
+/* ==============================
+   FORMULARIOS
+============================== */
+
 label {
     display: block;
     margin-top: 12px;
@@ -106,7 +136,10 @@ textarea {
     resize: vertical;
 }
 
-/* BOTONES */
+/* ==============================
+   BOTONES
+============================== */
+
 .boton {
     display: inline-block;
     background: #6b4226;
@@ -120,7 +153,14 @@ textarea {
     font-size: 1rem;
 }
 
-/* MENSAJES DEL FORMULARIO */
+.boton:hover {
+    background: #4d2e1b;
+}
+
+/* ==============================
+   MENSAJES DEL FORMULARIO
+============================== */
+
 #resultado {
     font-weight: bold;
 }
@@ -133,7 +173,10 @@ textarea {
     color: #176b32;
 }
 
-/* TABLAS */
+/* ==============================
+   TABLAS
+============================== */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -159,7 +202,10 @@ th {
     color: #ffffff;
 }
 
-/* PIE DE PÁGINA */
+/* ==============================
+   PIE DE PÁGINA
+============================== */
+
 .pie {
     background: #6b4226;
     color: #ffffff;
@@ -167,7 +213,10 @@ th {
     font-size: 0.9rem;
 }
 
-/* INDICADOR DE FOCO */
+/* ==============================
+   INDICADOR DE FOCO
+============================== */
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -176,7 +225,10 @@ textarea:focus-visible {
     outline-offset: 3px;
 }
 
-/* DISEÑO ADAPTABLE */
+/* ==============================
+   DISEÑO ADAPTABLE
+============================== */
+
 @media screen and (max-width: 600px) {
 
     body {
@@ -199,5 +251,4 @@ textarea:focus-visible {
     table {
         font-size: 0.9rem;
     }
-
 }
