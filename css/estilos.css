@@ -1,0 +1,12 @@
+body { font-family: Arial; font-size: 14px; width: 900px; margin: 0 auto; background: #f5efe6; }
+.encabezado { background: #8b5e3c; padding: 10px; }
+.encabezado h1 { color: #d9c3a5; font-size: 28px; }
+.menu a { color: #d9c3a5; margin-right: 6px; text-decoration: none; font-size: 12px; }
+.contenido { padding: 20px; }
+a { color: #c9a27a; }
+.pregunta { background: #a67c52; color: #d9c3a5; padding: 8px; margin-top: 6px; cursor: pointer; }
+.respuesta { display: none; padding: 8px; }
+input, textarea, .boton { outline: none; border: 1px solid #999; width: 300px; }
+.boton { background: #a67c52; color: #d9c3a5; text-align: center; padding: 4px; cursor: pointer; width: 80px; }
+#resultado { colour: red; }
+.pie { background: #8b5e3c; color: #b08a65; padding: 10px; font-size: 11px; }
