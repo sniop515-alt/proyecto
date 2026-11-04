@@ -1,33 +1,92 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-<meta charset="utf-8">
-<title>Inicio</title>
-<link rel="stylesheet" href="css/estilos.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Servicios - Café Manabí</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
-<div class="encabezado">
-  <h1>Café Manabí</h1>
-  <div class="menu">
-    <a href="index.html">Inicio</a>
-    <a href="servicios.html">Servicios</a>
-    <a href="contacto.html">Contacto</a>
-  </div>
-</div>
 
-<div class="contenido">
-  <h2>Nuestros servicios</h2>
-  <img src="img/postre.svg" width="400">
-  <table border="1">
-    <tr><td><b>Producto</b></td><td><b>Precio</b></td></tr>
-    <tr><td>Espresso</td><td>$1.50</td></tr>
-    <tr><td>Capuchino</td><td>$2.25</td></tr>
-    <tr><td>Torta de chocolate</td><td>$3.00</td></tr>
-  </table>
-  <h4>Eventos</h4>
-  <p>Organizamos catas y reuniones. <a href="contacto.html">Clic aquí</a> para reservar.</p>
-</div>
+    <header class="encabezado">
 
-<div class="pie">Café Manabí 2026</div>
+        <h1>Café Manabí</h1>
+
+        <nav class="menu" aria-label="Menú principal">
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+    </header>
+
+    <main class="contenido">
+
+        <section>
+
+            <h2>Nuestros servicios</h2>
+
+            <img
+                src="img/postre.svg"
+                alt="Ilustración de un postre de chocolate"
+                width="400"
+            >
+
+            <table>
+
+                <caption>Productos y precios de Café Manabí</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Precio</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Espresso</td>
+                        <td>$1.50</td>
+                    </tr>
+
+                    <tr>
+                        <td>Capuchino</td>
+                        <td>$2.25</td>
+                    </tr>
+
+                    <tr>
+                        <td>Torta de chocolate</td>
+                        <td>$3.00</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <section>
+
+            <h3>Eventos</h3>
+
+            <p>
+                Organizamos catas y reuniones.
+                <a href="contacto.html">
+                    Consulta nuestra página de contacto para reservar.
+                </a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        <p>Café Manabí 2026</p>
+    </footer>
+
 </body>
 </html>

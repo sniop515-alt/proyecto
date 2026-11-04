@@ -8,5 +8,5 @@ a { color: #c9a27a; }
 .respuesta { display: none; padding: 8px; }
 input, textarea, .boton { outline: none; border: 1px solid #999; width: 300px; }
 .boton { background: #a67c52; color: #d9c3a5; text-align: center; padding: 4px; cursor: pointer; width: 80px; }
-#resultado { colour: red; }
+#resultado { color: red; }
 .pie { background: #8b5e3c; color: #b08a65; padding: 10px; font-size: 11px; }

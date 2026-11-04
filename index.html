@@ -1,34 +1,86 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<meta charset="utf-8">
-<title>Inicio</title>
-<link rel="stylesheet" href="css/estilos.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inicio - Café Manabí</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/app.js" defer></script>
 </head>
+
 <body>
-<div class="encabezado">
-  <h1>Café Manabí</h1>
-  <div class="menu">
-    <a href="index.html">Inicio</a>
-    <a href="servicios.html">Servicios</a>
-    <a href="contacto.html">Contacto</a>
-  </div>
-</div>
 
-<div class="contenido">
-  <h1>El mejor café de la costa</h1>
-  <img src="img/cafe.svg" width="400">
-  <p style="color:#999999">Cultivamos y tostamos café de altura. Visítanos todos los días desde las 7 a.m.</p>
-  <p>Conoce nuestro menú, haz clic <a href="servicios.html">aquí</a>.</p>
+    <header class="encabezado">
+        <h1>Café Manabí</h1>
 
-  <h3>Preguntas frecuentes</h3>
-  <div class="pregunta" onclick="mostrar('r1')">¿Tienen opciones sin lactosa?</div>
-  <div class="respuesta" id="r1">Sí, ofrecemos leche de almendra y de avena.</div>
-  <div class="pregunta" onclick="mostrar('r2')">¿Aceptan reservas?</div>
-  <div class="respuesta" id="r2">Sí, desde la página de contacto.</div>
-</div>
+        <nav class="menu" aria-label="Menú principal">
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
 
-<div class="pie">Café Manabí 2026</div>
-<script src="js/app.js"></script>
+    <main class="contenido">
+
+        <section>
+            <h2>El mejor café de la costa</h2>
+
+            <img
+                src="img/cafe.svg"
+                alt="Ilustración de una taza de café"
+                width="400"
+            >
+
+            <p class="descripcion">
+                Cultivamos y tostamos café de altura.
+                Visítanos todos los días desde las 7 a.m.
+            </p>
+
+            <p>
+                Conoce nuestro
+                <a href="servicios.html">menú y nuestros servicios</a>.
+            </p>
+        </section>
+
+        <section class="preguntas-frecuentes">
+            <h2>Preguntas frecuentes</h2>
+
+            <button
+                class="pregunta"
+                type="button"
+                aria-expanded="false"
+                aria-controls="r1"
+                data-respuesta="r1">
+                ¿Tienen opciones sin lactosa?
+            </button>
+
+            <div class="respuesta" id="r1" hidden>
+                Sí, ofrecemos leche de almendra y de avena.
+            </div>
+
+            <button
+                class="pregunta"
+                type="button"
+                aria-expanded="false"
+                aria-controls="r2"
+                data-respuesta="r2">
+                ¿Aceptan reservas?
+            </button>
+
+            <div class="respuesta" id="r2" hidden>
+                Sí, desde la página de contacto.
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        <p>Café Manabí 2026</p>
+    </footer>
+
 </body>
 </html>
