@@ -80,32 +80,8 @@ a:hover {
    PREGUNTAS FRECUENTES
 ============================== */
 
-.pregunta {
-    display: block;
-    width: 100%;
-    background: #cc9773;
-    color: #ffffff;
-    padding: 12px;
-    margin-top: 8px;
-    border: none;
-    cursor: pointer;
-    text-align: left;
-    font-size: 1rem;
-}
-
-.pregunta:hover {
-    background: #a86e4b;
-}
-
-.respuesta {
-    padding: 12px;
-    background: #ffffff;
-    color: #3b291e;
-}
-
-.respuesta[hidden] {
-    display: none;
-}
+.pregunta { background: #6b4226; }
+.pregunta:hover { background: #4d2e1b; }
 
 /* ==============================
    FORMULARIOS
