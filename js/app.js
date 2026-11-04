@@ -1,13 +1,14 @@
-
-
 document.addEventListener("DOMContentLoaded", function () {
 
     // Preguntas frecuentes
+    const preguntas = document.querySelectorAll(".pregunta");
+
+    // Las respuestas se ocultan con JavaScript; sin JS quedan visibles
     document.querySelectorAll(".respuesta").forEach(function (respuesta) {
-    respuesta.hidden = true;
+        respuesta.hidden = true;
     });
-    
-    document.querySelectorAll(".pregunta").forEach(function (boton) {
+
+    preguntas.forEach(function (boton) {
 
         boton.addEventListener("click", function () {
 
@@ -40,21 +41,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
             evento.preventDefault();
 
-            const nombre = document.getElementById("nombre").value.trim();
+            const nombreInput = document.getElementById("nombre");
             const correoInput = document.getElementById("correo");
-            const correo = correoInput.value.trim();
             const resultado = document.getElementById("resultado");
 
-            if (
-                nombre === "" ||
-                correo === "" ||
-                !correoInput.validity.valid
-            ) {
+            const nombreValido = nombreInput.value.trim() !== "";
+            const correoValido =
+                correoInput.value.trim() !== "" && correoInput.validity.valid;
+
+            nombreInput.setAttribute("aria-invalid", String(!nombreValido));
+            correoInput.setAttribute("aria-invalid", String(!correoValido));
+
+            if (!nombreValido || !correoValido) {
 
                 resultado.textContent =
-                    "Revisa el nombre y escribe un correo válido.";
+                    "Error: revisa el nombre y escribe un correo válido.";
 
                 resultado.className = "error";
+
+                (nombreValido ? correoInput : nombreInput).focus();
 
             } else {
 
