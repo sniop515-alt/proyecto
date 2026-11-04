@@ -227,4 +227,8 @@ textarea:focus-visible {
     table {
         font-size: 0.9rem;
     }
+    input[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+    border: 3px solid #a00000;
+}
 }

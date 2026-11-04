@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".respuesta").forEach(function (respuesta) {
     respuesta.hidden = true;
     });
-    preguntas.forEach(function (boton) {
+    
+    document.querySelectorAll(".pregunta").forEach(function (boton) {
 
         boton.addEventListener("click", function () {
 
